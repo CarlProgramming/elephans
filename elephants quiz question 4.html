@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>elephant quiz</title>
+	<style>
+		body {
+			margin: 0px;
+			background-color: beige;
+		}
+
+		.pad {
+			padding: 25px;
+		}
+		.header {
+			background-color: lightblue;
+			color: green;
+			height: 100px;
+			font-size: 36pt;
+			text-align: center;
+		}
+		.welcome {
+			background-color: red;
+			color: white;
+			font-size: 16pt;
+			text-align: center;
+			height: 40px;
+			margin: 0px;
+		}
+		.main-text {
+		width: 60%;
+		float: left;
+		}
+		.divs {
+			margin: 5px;
+			width: 25%;
+			float: left;
+			border: 4px solid lightblue;
+		}
+		</style>
+</head>
+<body>
+	<script>
+	function checkAnswer() {
+		var answer = document.getElementById('text');
+		var answerText4 = answer.value;
+		if(answerText4 == "herbivore") {
+			return true;
+			alert("correct");
+			points + 1
+		}
+		alert("incorrect try again");
+		return false;
+		points - 1
+	}
+	</script>
+	<div class="header pad">
+		Lets See How Much You Know About Elephants!!
+	</div>
+	<div>
+		<p class="welcome">
+			type the answer you think is right in the box!!
+		</p>
+	</div>
+	<div class="main-text pad">
+		<p>good luck!!</p>
+		<p>Q.4</p>
+		<br/>
+		<p>is the elephant a herbivore or a carnivore?</p>
+		<p>put your answer here!!<input id="text" type="answer"/></p>
+		<a href="elephants quiz question 5.html" onclick="return checkAnswer();">
+			proceed to the next question
+		</a>
+
+		<br/>
+
+		<a href="elephants quiz question 5.html">
+			skip to next question
+		</a>
+
+		<br/>
+
+		<a href="index.html">
+			exit to elephans
+		</a>
+	</div>
+</body>
+</html>
